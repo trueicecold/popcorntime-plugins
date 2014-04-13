@@ -1,6 +1,8 @@
+<pre>
 Adding new shortcuts to popcorn time:
 
-CTRL-UP - Move the subtitles up a little.CTRL-DOWN - Move the subtitles down a little.
+CTRL-UP - Move the subtitles up a little.
+CTRL-DOWN - Move the subtitles down a little.
 CTRL-F - Fullscreen mode.
 CTRL-RIGHT - Fast forward 5 minutes.
 CTRL-LEFT - Rewind 5 minutes.
@@ -16,3 +18,4 @@ installation:
 	<script src="plugins/shortcuts/js/shortcuts.js"></script>
 
 That's it :)
+</pre>
