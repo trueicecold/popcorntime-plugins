@@ -3,7 +3,7 @@ Allows you to edit the subtitle font styling using regular css rules.
 
 usage:
 
-inside the plugin folder, edit subs.config file with the css you want for the subtitles.
+inside the popcorn time folder, edit subs.config file with the css you want for the subtitles.
 
 building from source:
 
