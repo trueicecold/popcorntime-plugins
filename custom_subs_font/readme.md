@@ -1,6 +1,10 @@
 <pre>
 Allows you to edit the subtitle font styling using regular css rules.
 
+usage:
+
+inside the plugin folder, edit subs.config file with the css you want for the subtitles.
+
 installation:
 
 1. create a folder named "plugins".
