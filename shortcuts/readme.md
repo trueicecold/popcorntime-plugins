@@ -13,9 +13,9 @@ installation:
 
 1. create a folder named "plugins".
 2. put the contents of this plugin inside.
-3. in popcorn time's index.html, add the following line just before the "</body>" tag (at the end of the file):
+3. in popcorn time's index.html, add the following line just before the "&lt;/body>" tag (at the end of the file):
 
-	<script src="plugins/shortcuts/js/shortcuts.js"></script>
+	&lt;script src="plugins/shortcuts/js/shortcuts.js"></script>
 
 That's it :)
 </pre>
