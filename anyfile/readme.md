@@ -15,5 +15,13 @@ installation:
 	&lt;script src="plugins/anyfile/js/anyfile.js"></script>
 	&lt;link rel="stylesheet" type="text/css" href="plugins/anyfile/css/anyfile.css">
 
+4. in Gruntfiles, add:
+	
+	'./plugins/**'
+	
+	to nodewebkit.src and dist.src arrays.
+	
+5. build using grunt :)	
+	
 That's it :)
 </pre>

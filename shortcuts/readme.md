@@ -9,7 +9,7 @@ CTRL-LEFT - Rewind 5 minutes.
 SHIFT-UP - Bigger subtitles.
 SHIFT-DOWN - Smaller subtitles.
 
-installation:
+building from source:
 
 1. create a folder named "plugins".
 2. put the contents of this plugin inside.
@@ -17,5 +17,13 @@ installation:
 
 	&lt;script src="plugins/shortcuts/js/shortcuts.js"></script>
 
+4. in Gruntfiles, add:
+	
+	'./plugins/**'
+	
+	to nodewebkit.src and dist.src arrays.
+	
+5. build using grunt :)
+	
 That's it :)
 </pre>
