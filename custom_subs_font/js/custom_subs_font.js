@@ -10,16 +10,26 @@ Plugins.CustomSubsFont.customFontCSS = "";
 Plugins.CustomSubsFont.init = function() {
 	var fs = require('fs');
 	
-	fs.readFile('plugins\\custom_subs_font\\subs.config', function (err, data) {
-		if (err) throw err;
-		Plugins.CustomSubsFont.customFontCSS = "<style>\n" +
-		"\t.vjs-subtitles.vjs-text-track {\n" +
-		"\t\t" + data + "\n" + 
-		"\t}\n" +
-		"</style>";
-		$("head").append(Plugins.CustomSubsFont.customFontCSS);
-		console.log(Plugins.CustomSubsFont.customFontCSS);
-	});	
+	var confLocation = process.execPath;
+	if (confLocation.indexOf("\\") > -1) {
+		confLocation = confLocation.substr(0, confLocation.lastIndexOf("\\")) + "\\subs.config";
+	}
+	if (confLocation.indexOf("/") > -1) {
+		confLocation = confLocation.substr(0, confLocation.lastIndexOf("/")) + "/subs.config";
+	}
+	
+	if (fs.existsSync(confLocation)) {
+		fs.readFile(confLocation, function (err, data) {
+			if (err) throw err;
+			Plugins.CustomSubsFont.customFontCSS = "<style>\n" +
+			"\t.vjs-subtitles.vjs-text-track {\n" +
+			"\t\t" + data + "\n" + 
+			"\t}\n" +
+			"</style>";
+			$("head").append(Plugins.CustomSubsFont.customFontCSS);
+			console.log(Plugins.CustomSubsFont.customFontCSS);
+		});	
+	}
 }
 
 Plugins.CustomSubsFont.init();
