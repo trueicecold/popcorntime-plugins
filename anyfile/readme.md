@@ -5,7 +5,7 @@ http://screencast.com/t/q8IRGZgY
 
 Due to html5 limitations, mkv are not playable. only mp4 torrents will work (popcorn time itself pulls only torrents with mp4 in them).
 
-installation:
+building from source:
 
 1. create a folder named "plugins".
 2. put the contents of this plugin inside.

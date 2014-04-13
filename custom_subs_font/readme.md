@@ -5,7 +5,7 @@ usage:
 
 inside the plugin folder, edit subs.config file with the css you want for the subtitles.
 
-installation:
+building from source:
 
 1. create a folder named "plugins".
 2. put the contents of this plugin inside.
