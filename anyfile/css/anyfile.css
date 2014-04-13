@@ -1,0 +1,75 @@
+.anyfile_wrapper {
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:45px;
+	left:0px;
+	background-color:rgba(0,0,0,0.85);
+}
+
+.anyfile_wrapper_inner {
+	border:1px solid #999999;
+	position: absolute;
+	top: 45px;
+	left: 45px;
+	bottom: 90px;
+	right: 45px;
+}
+
+.anyfile_wrapper_inner .header {
+	box-sizing: border-box;
+	border: 1px solid #000;
+	height: 45px;
+	left: 0;
+	padding: 15px;
+	position: absolute;
+	top: 0;
+	text-align: left;
+	width: 100%;
+	background-image: linear-gradient(to bottom, #282828 0%, #1e1e1e 100%);
+}
+
+.anyfile_wrapper_inner .header .close {
+	border-radius: 30px;
+	border: 0;
+	color: transparent;
+	display: inline-block;
+	font-size: 10px;
+	height: 13px;
+	padding: 0;
+	text-align: center;
+	width: 13px;
+	background:rgba(0, 0, 0, 0.8);
+	position:absolute;
+	right:7px;
+	top:16px;
+}
+
+.anyfile_wrapper_inner .header * {
+	display:inline-block;
+}
+
+.anyfile_wrapper_inner .header .close:hover {
+	background: #e74c3c;
+}
+
+.anyfile_wrapper_inner .header h1 {
+	color:#ffffff;
+	font-size:13px;
+}
+
+.anyfile_wrapper_inner .header #movie_crawler_title {
+	max-width:600px;
+}
+
+.anyfile_wrapper_inner .header #movie_crawler_title.error {
+	color:#ff6666;
+}
+
+.anyfile_wrapper_inner .header #movie_crawler_title.success {
+	color:#6666ff;
+}
+
+.anyfile_wrapper_inner .header #movie_crawler_title_download {
+	visibility:hidden;
+}
