@@ -1,3 +1,4 @@
+<pre>
 You can find the usage video here:
 
 http://screencast.com/t/q8IRGZgY
@@ -9,11 +10,10 @@ installation:
 1. create a folder named "plugins".
 2. put the contents of this plugin inside.
 
-3. in popcorn time's index.html, add the following lines just before the "</body>" tag (at the end of the file):
+3. in popcorn time's index.html, add the following lines just before the "&lt;/body>" tag (at the end of the file):
 	
-	<script src="plugins/anyfile/js/anyfile.js"></script>
-	<link rel="stylesheet" type="text/css" href="plugins/anyfile/css/anyfile.css">
+	&lt;script src="plugins/anyfile/js/anyfile.js"></script>
+	&lt;link rel="stylesheet" type="text/css" href="plugins/anyfile/css/anyfile.css">
 
 That's it :)
-
-That's it :)
+</pre>
