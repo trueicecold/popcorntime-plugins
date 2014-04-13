@@ -11,7 +11,7 @@ Plugins.Shortcuts.init = function() {
 	});
 	
 	document.addEventListener('keydown', function(event){
-        if (event.ctrlKey) {
+        if (event.ctrlKey && !event.shiftKey) {
 			event.preventDefault();
 			event.stopImmediatePropagation();
 			switch(event.keyCode) {
@@ -34,7 +34,7 @@ Plugins.Shortcuts.init = function() {
 					break;
 			}
 		}
-		if (event.shiftKey) {
+		if (event.shiftKey && !event.ctrlKey) {
 			event.preventDefault();
 			event.stopImmediatePropagation();
 			switch(event.keyCode) {
