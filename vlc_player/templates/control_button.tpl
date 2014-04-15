@@ -1,0 +1,1 @@
+<div id="control_vlc" style="float:right;color:#ffffff;width:30px;height:30px;cursor:pointer;background:url(/plugins/vlc_player/images/logo.png) no-repeat center center" onclick="Plugins.VLCPlayer.runPlayer()"></div>
